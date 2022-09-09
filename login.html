@@ -4,42 +4,47 @@
 -->
 <html>
 	<head>
-		<title>Log in - Meet friends</title>
+		<title lang="ru">Авторизация - Meet friends</title>
+		<title lang="en">Log in - Meet friends</title>
+		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
-
 		<!-- Wrapper -->
 			<div id="wrapper">
-
 				<!-- Header -->
 					<header id="header">
-						<p>Log in page</p>
+						<h2 lang="ru">Авторизация</h2>
+						<h2 lang="en">Log in page</h2>
 					</header>
-
 				<!-- Main -->
-					<div id="main">
-						<ul id="goback" class="icons">
-							<li><a href="index.html" class="fas fa-angle-left"></a></li>
-						</ul>
-						<!-- <a id="goback" href="index.html">
-							X
-						</a> -->
+					<div id="main" class="login">
+						<a href="index.html">
+							<div id="goback">
+								<svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="#6CC1F7" class="bi bi-x-circle" viewBox="0 0 16 16">
+									<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+									<path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+								</svg>
+							</div>
+						</a>
 						<!-- Content -->
 							<section id="login" class="main">
-								<form method="post" action="#" class="row aln-center">
+								<form method="get" action="board-history.html" class="row aln-center">
 									<div class="col-6 col-12-xsmall">
-										<p> Username </p>
-										<input type="text" name="demo-name" id="demo-name" value="" placeholder="Username" />
-										<p> Password </p>
-										<input type="password" name="demo-password" id="demo-password" value="" placeholder="Password" />
+										<p lang="ru" class="bold-text"> Имя пользователя </p>
+										<p lang="en" class="bold-text"> Username </p>
+										<input type="text" name="username" id="demo-name" value=""/>
+										<p lang="ru" class="bold-text"> Пароль </p>
+										<p lang="en" class="bold-text"> Password </p>
+										<input type="password" name="password" id="demo-password" value=""/>
 									</div>
 										<div class="col-12">
 											<ul class="actions">
-												<li><input type="submit" value="Log in" class="primary" /></li>
+												<li lang="ru"><input type="submit" value="Авторизироваться" class="primary" /></li>
+												<li lang="en"><input type="submit" value="Log in" class="primary" /></li>
 											</ul>
 											<ul class=icons>
 												<li><a href="" class="icon brands fa-yandex alt"><span class="label">Yandex</span></a></li>
@@ -56,7 +61,8 @@
 
 					<!-- Footer -->
 						<footer id="footer">
-							<p class="copyright">&copy; Meet friends. Designed by: <a href="https://mementomorri.github.io/">Karsten</a>.</p>
+							<p class="copyright" lang="ru">&copy; Meet friends. Разработал: <a href="https://mementomorri.github.io/">Karsten</a>.</p>
+							<p class="copyright" lang="en">&copy; Meet friends. Designed by: <a href="https://mementomorri.github.io/">Karsten</a>.</p>
 						</footer>
 				</div>
 

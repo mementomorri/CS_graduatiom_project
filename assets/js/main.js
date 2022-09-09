@@ -1,7 +1,5 @@
 /*
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	"Meet friends" personal project
 */
 
 (function($) {
@@ -56,7 +54,7 @@
 
 						var $this = $(this);
 
-						// External link? Bail.
+						// Bail external link.
 							if ($this.attr('href').charAt(0) != '#')
 								return;
 
@@ -121,3 +119,22 @@
 		});
 
 })(jQuery);
+
+window.onload = function(){
+  $('[lang]').hide();
+	if (typeof(Storage) !== "undefined") {
+  var lang= localStorage.getItem("lang");
+  switch (lang) {
+      case "en":
+          $('[lang="en"]').show();
+      break;
+      case "ru":
+          $('[lang="ru"]').show();
+      break;
+      default:
+          $('[lang="ru"]').show();
+      }
+		} else {
+			$('[lang="ru"]').show();
+		}
+};

@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<!--
+	"Meet friends" personal project
+-->
+<html>
+	<head>
+		<title lang="ru">Создать голосование - Meet friends</title>
+		<title lang="en">Create a new board - Meet friends</title>
+		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Navigation bar -->
+			<nav>
+				<div id="navbar-right">
+					<ul class="actions">
+						<li lang="ru"><a href="index.html" class="btn btn-floating">Выход</a></li>
+						<li lang="en"><a href="index.html" class="btn btn-floating">Log out</a></li>
+					</ul>
+				</div>
+			</nav>
+
+			<!-- Header -->
+			<header id="header">
+				<h2 lang="ru">Создадим новое голосование.</h2>
+				<h2 lang="en">Let's create a new board.</h2>
+			</header>
+
+				<!-- Main -->
+				<div id="main" class="create-board">
+					<a href="board-history.html">
+						<div id="goback">
+							<svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="#6CC1F7" class="bi bi-x-circle" viewBox="0 0 16 16">
+								<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+								<path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+							</svg>
+						</div>
+					</a>
+
+					<!-- Content -->
+					<div id="create-board" class="main">
+						<section id="board-config" class="main" style="border-top:none">
+							<form method="get" action="board.html" class="row gtr-uniform">
+								<p lang="ru" style="text-align: center" class="col-12"> Настройки голосования: </p>
+								<p lang="en" style="text-align: center" class="col-12"> Board configuration: </p>
+								<div class="col-6 col-12-small">
+									<input type="checkbox" id="suggest-decisions" name="suggest-decisions" checked>
+									<label lang="ru" for="suggest-decisions" class="bold-text">Участники могут предложить их решения</label>
+									<label lang="en" for="suggest-decisions" class="bold-text">Members can suggest their decisions</label>
+								</div>
+								<div class="col-6 col-12-small">
+									<input type="checkbox" id="hide-appropriate" name="hide-appropriate" checked>
+									<label lang="ru" for="hide-appropriate" class="bold-text">Спрятать "самое приемлимое решение"</label>
+									<label lang="en" for="hide-appropriate" class="bold-text">Hide “current most appropriate”</label>
+								</div>
+								<div class="col-6 col-12-small">
+									<input type="checkbox" id="see-votes" name="see-votes" checked>
+									<label lang="ru" for="see-votes" class="bold-text">Участники могут видеть решения друг друга</label>
+									<label lang="en" for="see-votes" class="bold-text">Members can see each other’s votes</label>
+								</div>
+								<div class="col-6 col-12-small">
+									<input type="checkbox" id="hide-best" name="hide-best" >
+									<label lang="ru" for="hide-best" class="bold-text">Спрятать "лучшее решение"</label>
+									<label lang="en" for="hide-best" class="bold-text">Hide “current best decision”</label>
+								</div>
+								<div class="col-6 col-12-small">
+									<input type="checkbox" id="start-date" name="start-date">
+									<label lang="ru" for="start-date" class="bold-text">Подождать до конкретной даты, чтобы начать, иначе голосование начнется сразу после создания</label>
+									<label lang="en" for="start-date" class="bold-text">Wait for  a certain date to start voting, start after creation otherwise</label>
+									<input type="date" name="" value="">
+								</div>
+								<p lang="ru" style="text-align: center; border-top: solid 1px #dddddd" class="col-12"> Информация о голосовании: </p>
+								<p lang="en" style="text-align: center; border-top: solid 1px #dddddd" class="col-12"> Board info: </p>
+								<div class="col-6 col-12-xsmall">
+									<p lang="ru" class="bold-text"> Название </p>
+									<p lang="en" class="bold-text"> Board name </p>
+									<input type="text" name="board-name" id="board-name" value=""/>
+								</div>
+								<div class="col-6 col-12-xsmall">
+									<p lang="ru" class="bold-text"> Описание </p>
+									<p lang="en" class="bold-text"> Board description </p>
+									<input type="text" name="board-descr" id="board-descr" value=""/>
+								</div>
+								<div class="col-6 col-12-xsmall">
+									<p lang="ru" class="bold-text"> Конец голосования </p>
+									<p lang="en" class="bold-text"> Deadline </p>
+									<input type="date" name="deadline" id="deadline" value=""/>
+								</div>
+								<div class="col-6 col-12-xsmall">
+									<p lang="ru" class="bold-text"> Предложите ваши решения, разделите их символом ";" </p>
+									<p lang="en" class="bold-text"> Suggest your decisions, separate them with ";" symbol </p>
+									<input type="text" name="start-decisions" id="start-decisions" value=""/>
+								</div>
+								<div class="col-12">
+									<ul class="actions">
+										<li lang="ru"><input type="submit" value="Принять" class="primary" /></li>
+										<li lang="en"><input type="submit" value="Confirm" class="primary" /></li>
+									</ul>
+								</div>
+							</div>
+						</form>
+					</section>
+				</div>
+			</div>
+
+			<!-- Footer -->
+			<footer id="footer">
+				<p class="copyright" lang="ru">&copy; Meet friends. Разработал: <a href="https://mementomorri.github.io/">Karsten</a>.</p>
+				<p class="copyright" lang="en">&copy; Meet friends. Designed by: <a href="https://mementomorri.github.io/">Karsten</a>.</p>
+			</footer>
+
+			<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
