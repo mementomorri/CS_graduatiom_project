@@ -1,6 +1,6 @@
 # Meet friends  
 
-###TL;DR  
+### TL;DR  
 Ссылка на [интерактивный макет](https://mementomorri.github.io/CS_graduatiom_project/)  
 
 ## Мотивационное обоснование к появлению проекта
