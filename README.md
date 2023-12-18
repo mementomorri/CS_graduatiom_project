@@ -1,4 +1,7 @@
-# Meet friends
+# Meet friends  
+
+###TL;DR  
+Ссылка на [интерактивный макет](https://mementomorri.github.io/CS_graduatiom_project/)  
 
 ## Мотивационное обоснование к появлению проекта
 
@@ -68,7 +71,7 @@
 
 ## Интерактивный макет
 
-В результате разработки был получен [интерактивный макет](https://mementomorri.github.io/comp_science_graduatiom_project/), который размешен с помощью github-pages.
+В результате разработки был получен [интерактивный макет](https://mementomorri.github.io/CS_graduatiom_project/), который размешен с помощью github-pages.
 
 ## Заключение
 
